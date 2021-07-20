@@ -22,6 +22,18 @@ List
 
 11.Effect with wave ✅
 
+12.Merge HTML and WebGL with custom scroll ✅
+
+13.Create meshes from images ✅
+
+14.Correct positioning ✅
+
+15.Resizing website ✅
+
+16.Mouse events ✅
+
+17.Barba.js intro ✅
+
 setup , start
 
 npm install parcel-bundler

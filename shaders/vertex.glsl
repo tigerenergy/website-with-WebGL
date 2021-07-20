@@ -15,8 +15,9 @@ void main() {
     vec4 defaultState = modelMatrix * vec4( position, 1.0);
     vec4 fullScreenState = vec4( position, 1.0);
 
-    fullScreenState.x *= uResolution.x / uQuadSize.x;
-    fullScreenState.y *= uResolution.y / uQuadSize.y;
+    fullScreenState.x *= uResolution.x;
+    fullScreenState.y *= uResolution.y;
+    fullScreenState.z += uCorners.x;
 
     float cornersProgress = mix(
       mix(uCorners.z , uCorners.w , uv.x),
@@ -24,9 +25,9 @@ void main() {
       uv.y
     );
 
-    vec4 finalState = mix(defaultState , fullScreenState , uProgress + waves);
+    vec4 finalState = mix(defaultState , fullScreenState , cornersProgress);
 
-    vSize = mix(uQuadSize , uResolution , uProgress);
+    vSize = mix(uQuadSize , uResolution , cornersProgress);
 
 
     gl_Position = projectionMatrix * viewMatrix * finalState;
