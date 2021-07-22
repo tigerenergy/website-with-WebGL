@@ -34,6 +34,8 @@ List
 
 17.Barba.js intro ✅
 
+18.Creating smooth Barba.js transition ✅
+
 setup , start
 
 npm install parcel-bundler
