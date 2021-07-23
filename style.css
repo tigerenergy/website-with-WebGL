@@ -4,18 +4,19 @@
 }
 body {
   background: #000;
-  font-family: 'Coustard', serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   color: #fff;
 }
 .header {
+  position: fixed;
   font-weight: 900;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10rem;
-  z-index: 10;
+  font-size: 3rem;
+  z-index: 100;
   text-shadow: 0 2px 2px #000;
 }
 .header a {
@@ -44,7 +45,7 @@ canvas {
 
 /* item */
 .item {
-  font-family: 'Coustard', serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
   color: #eee;
 }
@@ -64,10 +65,11 @@ canvas {
   margin-right: 300px;
 }
 .item img {
-  width: 15vw;
-  height: 30vw;
-  opacity: 0.1;
+  width: 8vw;
+  height: 16vw;
+  opacity: 0;
 }
+
 /* single */
 .single {
 }
@@ -127,7 +129,7 @@ figure img {
   top: 0;
   left: 0;
   z-index: 100;
-  background: #949494;
+  background: #000;
   transform: translate(0, 100%);
 }
 
